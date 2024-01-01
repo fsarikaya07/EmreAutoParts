@@ -14,6 +14,11 @@ export const carTypes = [
     title: "Volkswagen",
     slug: "volkswagen",
   },
+  {
+    image: "/assets/images/arabamarka/vw.jpg",
+    title: "Seat",
+    slug: "seat",
+  },
 ];
 
 export const carModule = [
@@ -80,6 +85,27 @@ export const carModule = [
       },
     ],
   },
+  {
+    image: "/assets/images/arabamarka/vw.jpg",
+    slug: "seat",
+    data: [
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Seat Leon",
+        slug: "seat-leon",
+      },
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Volkswagen Transporter",
+        slug: "transporter",
+      },
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Volkswagen Transporter",
+        slug: "transporter",
+      },
+    ],
+  },
 ];
 
 export const carMdProduct = [
@@ -130,7 +156,7 @@ export const carMdProduct = [
   // Mercedes
   {
     image: "/assets/images/arabamarka/mercedes.jpg",
-    slug: "mercedes",
+    slug: "vito",
     data: [
       {
         image: "/assets/images/arabamarka/mercedes.jpg",
@@ -147,6 +173,11 @@ export const carMdProduct = [
         title: "MERCEDES VİTO",
         slug: "vito",
       },
+      {
+        image: "/assets/images/arabamarka/mercedes.jpg",
+        title: "MERCEDES VİTO-1",
+        slug: "vito-1",
+      },
     ],
   },
 
@@ -154,6 +185,29 @@ export const carMdProduct = [
   {
     image: "/assets/images/arabamarka/vw.jpg",
     slug: "volkswagen",
+    data: [
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Volkswagen Transporter",
+        slug: "transporter",
+      },
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Volkswagen Transporter",
+        slug: "transporter",
+      },
+      {
+        image: "/assets/images/arabamarka/vw.jpg",
+        title: "Volkswagen Transporter",
+        slug: "transporter",
+      },
+    ],
+  },
+
+  // Seat 
+  {
+    image: "/assets/images/arabamarka/vw.jpg",
+    slug: "seat-leon",
     data: [
       {
         image: "/assets/images/arabamarka/vw.jpg",
