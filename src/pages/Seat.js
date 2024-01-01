@@ -5,7 +5,7 @@ import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 
 const Seat = () => {
-  let publicUrl = process.env.PUBLIC_URL + "/";
+  
   const {slug}=useParams()
   console.log(slug, "publicUrl");
   const data = carSeatSkin;
@@ -60,7 +60,7 @@ const Seat = () => {
                       <div className="inner">
                         <img
                           src={
-                            publicUrl + `${item?.image}`
+                           `${item?.image}`
                           }
                           alt="#"
                         />

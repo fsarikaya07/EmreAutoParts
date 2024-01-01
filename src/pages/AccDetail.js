@@ -1,12 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import { carSeatDetail } from '../data/Data'
-import HeaderThree from '../common/header/HeaderThree'
 import FooterOne from '../common/footer/FooterOne'
+import HeaderThree from '../common/header/HeaderThree'
+import { useParams } from 'react-router-dom'
+import { carAccDetail } from '../data/AccessoriesData'
 
-const SeatDetail = () => {
+const AccDetail = () => {
     const {slug}=useParams()
-    const data= carSeatDetail
+    const data= carAccDetail
     const dataDetail= data.find(item=> item.slug=== slug)
     console.log("detail", dataDetail);
     
@@ -62,4 +62,4 @@ const SeatDetail = () => {
   )
 }
 
-export default SeatDetail
+export default AccDetail

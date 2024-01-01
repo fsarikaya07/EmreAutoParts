@@ -18,6 +18,10 @@ import "swiper/css/thumbs";
 import SeatDetail from './pages/SeatDetail';
 import SeatTypes from './pages/SeatType';
 import Seat from './pages/Seat';
+import Accessories from './pages/Accessories';
+import AccModule from './pages/AccModule';
+import AccProduct from './pages/AccProduct';
+import AccDetail from './pages/AccDetail';
 
 function App() {
   useEffect(() => {
@@ -32,10 +36,18 @@ function App() {
         <Routes>
             <Route path={`/`} exact element={<HomeDefault />} />
             <Route path={`/index`} exact element={<HomeDefault />} />
+
+            
             <Route path={`/koltuk`} exact element={<SeatTypes />} />
             <Route path={`/koltuk/:slug`} exact element={<Seat />} />
             <Route path={`/koltuk/:categorySlug/:slug`} exact element={<SeatDetail />} />
             
+            <Route path={`/aksesuar`} exact element={<Accessories />} />
+            <Route path={`/aksesuar/:slug`} exact element={<AccModule />} />
+            <Route path={`/aksesuar/:CategorySlug/:slug`} exact element={<AccProduct />} />
+            <Route path={`/aksesuar/:CategorySlug/:Mdslug/:slug`} exact element={<AccDetail />} />
+
+
             <Route path={`/*`} exact element={<Error />} />
         </Routes>
         <ScrollToTop className="scrollUp" smooth top="1500" component={<FaAngleUp />} />
