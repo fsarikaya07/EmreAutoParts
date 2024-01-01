@@ -7,171 +7,53 @@ import styled from 'styled-components';
 
 const menuData = [
     {
-        title: 'Home',
+        title: "Anasayfa",
         path: '/',
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Home',
-                path: '/',
-            },
-            {
-                title: 'Home Two',
-                path: '/home-two',
-            },
-            {
-                title: 'Home Three',
-                path: '/home-three',
-            },
-            {
-                title: 'Home Four',
-                path: '/home-four',
-            },
-            {
-                title: 'Home Five',
-                path: '/home-five',
-            },
-        ],
+        
     },
     {
-        title: 'About',
-        path: '/',
+        title: 'Koltuk',
+        path: '/koltuk',
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'About One',
-                path: '/about-one',
-            },
-            {
-                title: 'About Two',
-                path: '/about-two',
-            },
-        ],
+    
     },
 
     {
-        title: 'Services',
-        path: '#',
+        title: 'Aksesuar',
+        path: '/aksesuar',
 
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Services',
-                path: '/services',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'General Contracting',
-                path: '/general-contracting',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Metrial Managment',
-                path: '/metrial-managment',
-            },
-            {
-                title: 'Building Renovation',
-                path: '/building-renovation',
-            },
-            {
-                title: 'Architecture Design',
-                path: '/architecture-design',
-            },
-            {
-                title: 'Multistory Build',
-                path: '/multistory-build',
-            },
-        ],
+      
     },
 
     {
-        title: 'Page',
-        path: '#',
+        title: 'Yedek Parca',
+        path: '/yedek-parca',
 
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Portfolio',
-                path: '/portfolio',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Portfolio Details',
-                path: '/portfolio-details',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Team',
-                path: '/team',
-            },
-            {
-                title: 'Team Details',
-                path: '/team-details',
-            },
-            {
-                title: 'Testimonials',
-                path: '/testimonials',
-            },
-            {
-                title: 'Pricing',
-                path: '/pricing',
-            },
-            {
-                title: 'FAQ',
-                path: '/faq',
-            },
-            {
-                title: 'Error',
-                path: '/error',
-            },
-        ],
+       
     },
 
     {
-        title: 'Blog',
-        path: '#',
+        title: 'Hakkımızda',
+        path: '/hakkmızda',
 
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Blog',
-                path: '/blog',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Blog Grid',
-                path: '/blog-grid',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Blog List',
-                path: '/blog-list',
-            },
-            {
-                title: 'Blog Standard',
-                path: '/blog-standard',
-            },
-            {
-                title: 'Blog Details',
-                path: '/blog-details',
-            },
-        ],
+       
     },
 
-    {
-        title: 'Contact',
-        path: '/contact',
-    },
+
 ];
 
 const SidebarLink = styled(Link)`
