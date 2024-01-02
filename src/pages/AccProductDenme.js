@@ -43,7 +43,7 @@ const AccProductDenem = () => {
                             {item.title}
                           </Link>
                         </h2>
-                        <p>Building Interior</p>
+                        
                       </div>
                     </div>
                   </div>
