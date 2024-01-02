@@ -101,37 +101,14 @@ export default class HeaderOne extends React.Component {
                                             </div>
                                         </nav>
                                     </div>
-
-
-                                    <div className="main-header-one__bottom-right">
-                                        <div className="search-box">
-                                            <SearchButton />
-                                        </div>
-
-                                        <div className="cart-btn">
-                                            <Link to={process.env.PUBLIC_URL + `/`}>
-                                                <span className="icon-shopping-bag-1"></span><span className="count">0</span>
-                                            </Link>
-                                        </div>
-
-                                        <div className="side-content-button-box">
-                                            <OffCanvasStyleOne />
-                                        </div>
-
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </header>
-
                 <div className="stricky-header stricked-menu main-menu">
                     <div className="sticky-header__content"></div>
-                </div>
-
-            
+                </div>            
             </>
         )
     }

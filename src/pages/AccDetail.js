@@ -3,12 +3,14 @@ import FooterOne from '../common/footer/FooterOne'
 import HeaderThree from '../common/header/HeaderThree'
 import { useParams } from 'react-router-dom'
 import { carAccDetail } from '../data/AccessoriesData'
+import EComment from '../components/ecommetGalery/EComment'
 
 const AccDetail = () => {
     const {slug}=useParams()
     const data= carAccDetail
     const dataDetail= data.find(item=> item.slug=== slug)
-    console.log("detail", dataDetail);
+    const imgDetail= dataDetail.image
+    console.log("detail", imgDetail);
     
   return (
     <>
@@ -20,13 +22,14 @@ const AccDetail = () => {
           <div className="row">
             {/* Start Faq One Img */}
             <div className="col-xl-6">
-              <div
+              {/* <div
                 className="faq-one__img wow slideInLeft"
                 data-wow-delay="100ms"
                 data-wow-duration="2500ms"
               >
                 <img src={`${dataDetail.image}`} alt="#" />
-              </div>
+              </div> */}
+              <EComment imgDetail={imgDetail}/>
             </div>
             {/* End Faq One Img */}
 

@@ -23,6 +23,7 @@ import AccModule from "./pages/AccModule";
 import AccProduct from "./pages/AccProduct";
 import AccDetail from "./pages/AccDetail";
 import Loading from "./components/loading/Loading";
+import AccProductDenem from "./pages/AccProductDenme";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,10 +53,15 @@ function App() {
 
             <Route path={`/aksesuar`} exact element={<Accessories />} />
             <Route path={`/aksesuar/:slug`} exact element={<AccModule />} />
-            <Route
+            {/* <Route
               path={`/aksesuar/:CategorySlug/:slug`}
               exact
               element={<AccProduct />}
+            /> */}
+            <Route
+              path={`/aksesuar/:CategorySlug/:slug`}
+              exact
+              element={<AccProductDenem />}
             />
             <Route
               path={`/aksesuar/:CategorySlug/:Mdslug/:slug`}

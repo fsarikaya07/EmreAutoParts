@@ -4,7 +4,7 @@ import { navbarTr } from "../../data/Data";
 
 const Nav = () => {
   const data = navbarTr;
-  console.log(data);
+
   return (
     <div className="main-menu text-center">
       <nav>

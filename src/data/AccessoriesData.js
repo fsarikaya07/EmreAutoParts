@@ -204,7 +204,7 @@ export const carMdProduct = [
     ],
   },
 
-  // Seat 
+  // Seat
   {
     image: "/assets/images/arabamarka/vw.jpg",
     slug: "seat-leon",
@@ -229,7 +229,13 @@ export const carMdProduct = [
 ];
 export const carAccDetail = [
   {
-    image: "/assets/images/koltuk/img1.jpg",
+    image: [
+      "/assets/images/koltuk/img1.jpg",
+      "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+    ],
     title: "Ürün 1 Deri",
     module: "BMW M3",
     price: "$19.99",
@@ -237,7 +243,13 @@ export const carAccDetail = [
     slug: "bmw-1-ayna-kapag",
   },
   {
-    image: "/assets/images/koltuk/img2.jpg",
+    image: [
+      "/assets/images/koltuk/img2.jpg",
+      "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+    ],
     title: "Ürün 2 Suni Deri",
     module: "BMW M3",
     price: "$24.99",
@@ -245,7 +257,13 @@ export const carAccDetail = [
     slug: "suni-deri",
   },
   {
-    image: "/assets/images/koltuk/img3.jpg",
+    image: [
+      "/assets/images/koltuk/img3.jpg",
+      "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+    ],
     title: "Ürün 3 Kumaş",
     module: "BMW M3",
     price: "$29.99",
