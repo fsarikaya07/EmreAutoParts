@@ -1,119 +1,3 @@
-export const carSeatType = [
-  {
-    image: "/assets/images/koltuk/img1.jpg",
-    title: "Deri Koltuk",
-    slug: "deri",
-  },
-  {
-    image: "/assets/images/koltuk/img2.jpg",
-    title: "Suni Deri Koltuk",
-    slug: "suni-deri",
-  },
-  {
-    image: "/assets/images/koltuk/img3.jpg",
-    title: "Kumaş Koltuk",
-    slug: "kumas",
-  },
-];
-
-export const carSeatSkin = [
-  {
-    slug: "deri",
-    data: [
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Deri Koltuk",
-        slug: "deri-k",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Deri Koltuk",
-        slug: "deri-k",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Deri Koltuk",
-        slug: "deri-k",
-      },
-    ],
-  },
-
-  {
-    slug: "suni-deri",
-    data: [
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Suni Deri Koltuk",
-        slug: "suni-deri",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Suni Deri Koltuk",
-        slug: "suni-deri",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Suni Deri Koltuk",
-        slug: "suni-deri",
-      },
-    ],
-  },
-
-  {
-    slug: "kumas",
-    data: [
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Kumaş Koltuk",
-        slug: "kumas-k",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Kumaş Koltuk",
-        slug: "kumas-k",
-      },
-      {
-        image: "/assets/images/koltuk/img3.jpg",
-        title: "Kumaş Koltuk",
-        slug: "kumas-k",
-      },
-    ],
-  },
-];
-
-
-
-export const carSeatDetail = [
-  {
-    image: "/assets/images/koltuk/img1.jpg",
-    title: "Ürün 1 Deri",
-    module: "BMW M3",
-    price: "$19.99",
-    contetn: " Deneme      ",
-    slug: "deri-k",
-  },
-  {
-    image: "/assets/images/koltuk/img2.jpg",
-    title: "Ürün 2 Suni Deri",
-    module: "BMW M3",
-    price: "$24.99",
-    contetn: "",
-    slug: "suni-deri",
-  },
-  {
-    image: "/assets/images/koltuk/img3.jpg",
-    title: "Ürün 3 Kumaş",
-    module: "BMW M3",
-    price: "$29.99",
-    contetn: "",
-    slug: "kumas-k",
-  },
-];
-
-
-
-
-
 export const navbarTr = [
   {
     title: "AnaSayfa",
@@ -132,42 +16,48 @@ export const navbarTr = [
     title: "Yedek Parca",
     slug: "/yedekParca",
   },
+  {
+    title: "Hakkımızda",
+    slug: "/hakkımızda",
+  },
 ];
 
-// export const carSeat = [
-//   {
-//     image: "//assets/images/koltuk/img1.jpg",
-//     title: "Ürün 1",
-//     module: "BMW M3",
-//     price: "$19.99",
-//     slug: "urun-1",
-//   },
-//   {
-//     image: "//assets/images/koltuk/img2.jpg",
-//     title: "Ürün 2",
-//     module: "BMW M3",
-//     price: "$24.99",
-//     slug: "",
-//   },
-//   {
-//     image: "/assets/images/koltuk/img3.jpg",
-//     title: "Ürün 3",
-//     module: "BMW M3",
-//     price: "$29.99",
-//     slug: "",
-//   },
-//   {
-//     image: "/assets/images/koltuk/img4.jpg",
-//     title: "Ürün 3",
-//     module: "BMW M3",
-//     price: "$29.99",
-//     slug: "",
-//   },
-//   {
-//     image: "/assets/images/koltuk/img5.jpg",
-//     title: "Ürün 3",
-//     module: "BMW M3",
-//     price: "$29.99",
-//     slug: "",
-//   },
-// ];
+export const slider = [
+  {
+    title: "AnaSayfa",
+    title2: "",
+    content: "",
+    images: "",
+  },
+];
+export const categorys = [
+  {
+    title: "Koltuk",
+    slug: "koltuk",
+    content: "Lorem ipsum is simply free text dolor amett consec adipisc.",
+    images: "/assets/images/koltuk/img1.jpg",
+  },
+  {
+    title: "Aksesuar",
+    slug: "aksesuar",
+    content: "Lorem ipsum is simply free text dolor amett consec adipisc.",
+    images: "/assets/images/urunler/aynakapagı.jpg",
+  },
+  {
+    title: "Yedek Parca",
+    slug: "yedek-parca",
+    content: "Lorem ipsum is simply free text dolor amett consec adipisc.",
+    images: "/assets/images/urunler/tavan.jpg",
+  },
+];
+
+export const aboutUs = {
+  title: "Emre Eymur",
+  title2: "Eymur  Auto Parts",
+  slug: "/hakkımızda",
+  content: "Lorem ipsum is simply free text dolor amett consec adipisc.",
+  content2: "Lorem ipsum is simply free text dolor amett consec adipisc.",
+  images: "/assets/images/logo/logo2.jpg",
+  button:"Daha Fazla Bİlgi İcin",
+  video:"https://www.youtube.com/watch?v=C6nykXnPV64"
+};

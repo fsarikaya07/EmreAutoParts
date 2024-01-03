@@ -22,14 +22,14 @@ const HomeDefault = () => {
             <ServiceThree />
             <AboutFour />
             <ProjectThree />
-            <FeatureFour />
+            {/* <FeatureFour />
             <FeatureThree />
             <FaqOne />
             <TestimonialThree />
             <PricingOne />
             <WorkPerformanceOne />
             <BrandOne />
-            <BlogOne />
+            <BlogOne /> */}
             <FooterOne />
         </>
     )

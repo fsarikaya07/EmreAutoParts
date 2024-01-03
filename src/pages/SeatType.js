@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import {  carSeatType } from "../data/Data";
+
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
+import { carSeatType } from "../data/SeatData";
 
 const SeatTypes = () => {
  

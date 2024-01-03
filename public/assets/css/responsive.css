@@ -1436,11 +1436,11 @@ Update1.0
 ****************************************************************/
 @media only screen and (min-width: 1200px) and (max-width: 1800px) {
     .services-three .shape2 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three .shape1 {
-        display: none;
+        /* display: none; */
     }
 }
 
@@ -1502,11 +1502,11 @@ Update1.0
 
     /**Services Three**/
     .services-three .shape2 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three .shape1 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three__top {
@@ -1650,11 +1650,11 @@ Update1.0
 
     /**Services Three**/
     .services-three .shape2 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three .shape1 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three__top {
@@ -1811,11 +1811,11 @@ Update1.0
 
     /**Services Three**/
     .services-three .shape2 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three .shape1 {
-        display: none;
+        /* display: none; */
     }
 
     .services-three__top {

@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import {  carSeatSkin } from "../data/Data";
+
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
+import { carSeatSkin } from "../data/SeatData";
 
 const Seat = () => {
   

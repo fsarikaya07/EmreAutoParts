@@ -1,102 +1,99 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { aboutUs } from "../../data/Data";
 
-export default class AboutFour extends React.Component {
-    componentDidMount() {
+const AboutFour = () => {
+    const data = aboutUs
+    
+console.log("object",data);
 
-        const $ = window.$;
-        
-        if ($(".video-popup").length) {
-            $(".video-popup").magnificPopup({
-              type: "iframe",
-              mainClass: "mfp-fade",
-              removalDelay: 160,
-              preloader: true,
-        
-              fixedContentPos: false,
-            });
-        }
-          
+  useEffect(() => {
+    const $ = window.$;
+
+    if ($(".video-popup").length) {
+      $(".video-popup").magnificPopup({
+        type: "iframe",
+        mainClass: "mfp-fade",
+        removalDelay: 160,
+        preloader: true,
+
+        fixedContentPos: false,
+      });
     }
-    render(){
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        return (
-            <>
-                <div className="about-three">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-6">
-                                <div className="about-three__img">
-                                    <div className="inner">
-                                        <img src={publicUrl+"assets/images/update1.0/about-v3-img1.jpg"} alt="#" />
-                                        <div className="about-three__img-video wow zoomIn" data-wow-delay="100ms">
-                                            <a href="https://www.youtube.com/watch?v=0O2aH4XLbto" className="video-popup">
-                                                <div className="about-three__img-video-icon">
-                                                    <span className="fa fa-play"></span>
-                                                    <i className="ripple"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  }, []);
 
-                            <div className="col-xl-6">
-                                <div className="about-three__content">
-                                    <div className="sec-title">
-                                        <div className="sec-title__tagline">
-                                            <h6> ABOUT US </h6> <span className="right"></span>
-                                        </div>
-                                        <h2 className="sec-title__title">Construction For Commercial</h2>
-                                    </div>
-
-                                    <div className="about-three__content-inner">
-                                        <div className="text1">
-                                            <p>Construction is a general term meaning the art and science to form objects
-                                                systems organizations, and comes from Latin construction and Old French
-                                                construction. To construct is the verb:</p>
-                                        </div>
-                                        <div className="text2">
-                                            <h4>It is a long established fact that a reader will be distracted by the readable
-                                                content </h4>
-                                        </div>
-                                        <ul className="about-three__content-list">
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-tick"></span>
-                                                </div>
-                                                <div className="text-box">
-                                                    <p> Interior Design Package</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-tick"></span>
-                                                </div>
-                                                <div className="text-box">
-                                                    <p> Renovaion Of Commercial Office</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="icon-box">
-                                                    <span className="icon-tick"></span>
-                                                </div>
-                                                <div className="text-box">
-                                                    <p>Reparing Of Residentail Roof</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div className="about-three__content-btn">
-                                            <Link href={`${process.env.PUBLIC_URL}/about-one`} className="thm-btn" data-text="Discover More +">
-                                                Discover More +</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+ 
+  return (
+    <>
+      <div className="about-three">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6">
+              <div className="about-three__img">
+                <div className="inner">
+                  <img
+                    src={
+                     data.images
+                    }
+                    alt="#"
+                  />
+                  <div
+                    className="about-three__img-video wow zoomIn"
+                    data-wow-delay="100ms"
+                  >
+                    <a
+                      href={data.video}
+                      className="video-popup"
+                    >
+                      <div className="about-three__img-video-icon">
+                        <span className="fa fa-play"></span>
+                        <i className="ripple"></i>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-            </>
-        )
-    }
-}
+              </div>
+            </div>
+
+            <div className="col-xl-6">
+              <div className="about-three__content">
+                <div className="sec-title">
+                  <div className="sec-title__tagline">
+                    <h6> {data.title} </h6> <span className="right"></span>
+                  </div>
+                  <h2 className="sec-title__title">
+                    {data.title2}
+                  </h2>
+                </div>
+
+                <div className="about-three__content-inner">
+                  <div className="text1">
+                    <p>
+                    {data.content}
+                    </p>
+                  </div>
+                  <div className="text2">
+                    <h4>
+                    {data.content2}
+                    </h4>
+                  </div>
+                  {/* <ul></ul> */}
+                  <div className="about-three__content-btn">
+                    <Link
+                      href={`/${data.slug}`}
+                      className="thm-btn"
+                      data-text={data.button}
+                    >
+                      {data.button}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default AboutFour;
