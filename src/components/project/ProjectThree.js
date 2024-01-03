@@ -91,7 +91,7 @@ const ProjectThree = () => {
                   <div className="project-three__single-img">
                     <img
                       src={
-                       item.image
+                       item.image[0]
                       }
                       alt="#"
                     />
