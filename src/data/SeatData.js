@@ -83,7 +83,7 @@ export const carSeatSkin = [
 
 export const carSeatDetail = [
   {
-    image: "/assets/images/koltuk/img1.jpg",
+    image: ["/assets/images/koltuk/img1.jpg","/assets/images/koltuk/img1.jpg","/assets/images/koltuk/img1.jpg",],
     title: "Ürün 1 Deri",
     module: "BMW M3",
     price: "$19.99",
@@ -91,7 +91,7 @@ export const carSeatDetail = [
     slug: "deri-k",
   },
   {
-    image: "/assets/images/koltuk/img2.jpg",
+    image: ["/assets/images/koltuk/img2.jpg","/assets/images/koltuk/img2.jpg","/assets/images/koltuk/img2.jpg"],
     title: "Ürün 2 Suni Deri",
     module: "BMW M3",
     price: "$24.99",
@@ -99,7 +99,7 @@ export const carSeatDetail = [
     slug: "suni-deri",
   },
   {
-    image: "/assets/images/koltuk/img3.jpg",
+    image: ["/assets/images/koltuk/img3.jpg", "/assets/images/koltuk/img3.jpg", "/assets/images/koltuk/img3.jpg"],
     title: "Ürün 3 Kumaş",
     module: "BMW M3",
     price: "$29.99",
