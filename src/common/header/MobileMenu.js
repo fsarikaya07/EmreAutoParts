@@ -4,6 +4,7 @@ import { AiOutlineBars } from 'react-icons/ai';
 import { CgChevronDown, CgChevronLeft } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { LogoImage, contact } from '../../data/Data';
 
 const menuData = [
     {
@@ -153,7 +154,8 @@ const SidebarWrap = styled.div`
 
 const MobileMenu = () => {
     const [sidebar, setSidebar] = useState(false);
-
+    const logoImage=LogoImage
+    const dataContact= contact
     const showSidebar = () => setSidebar(!sidebar);
     let publicUrl = process.env.PUBLIC_URL+'/'
 
@@ -168,7 +170,7 @@ const MobileMenu = () => {
                     <SidebarWrap>
                         <div className="mobile-nav__content">
                             <div className="logo-box">
-                                <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo-1.png"} width="155" alt="" /></Link>
+                                <Link to={`/`} aria-label="logo image"><img src={logoImage.anasayfa} width="155" alt="" /></Link>
                             </div>
                             <NavIcon to="#">
                                 <AiIcons.AiOutlineClose
@@ -186,11 +188,11 @@ const MobileMenu = () => {
                             <ul className="mobile-nav__contact list-unstyled">
                                 <li>
                                     <i className="fa fa-envelope" aria-hidden="true"></i>
-                                    <a href="mailto:needhelp@packageName__.com">needhelp@const.com</a>
+                                    <a href={`mailto:${dataContact.email}`}>{dataContact.email}</a>
                                 </li>
                                 <li>
                                     <i className="fa fa-phone" aria-hidden="true"></i>
-                                    <a href="tel:666-888-0000">666 888 0000</a>
+                                    <a href={`tel:${dataContact.iletişim}`}>{dataContact.iletişim}</a>
                                 </li>
                             </ul>
                             <div className="mobile-nav__top">
