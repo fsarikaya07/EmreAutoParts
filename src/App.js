@@ -24,6 +24,7 @@ import AccProduct from "./pages/AccProduct";
 import AccDetail from "./pages/AccDetail";
 import Loading from "./components/loading/Loading";
 import AccProductDenem from "./pages/AccProductDenme";
+import WhatsApp from "./components/whatsApp/WhatsApp";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,6 +72,7 @@ function App() {
 
             <Route path={`/*`} exact element={<Error />} />
           </Routes>
+          <WhatsApp/>
           <ScrollToTop
             className="scrollUp"
             smooth

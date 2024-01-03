@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LogoImage } from "../../data/Data";
 
-export default class LogoBox extends React.Component {
-  render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
+const LogoBox = ()=> {
+    const logo =LogoImage
+    
     return (
       <>
         <div className="logo-box">
-          <Link to={process.env.PUBLIC_URL + `/`}>
-            <img src={publicUrl + "assets/images/logo/logo.jpg"} alt="Logo" />
+          <Link to={`/`}>
+            <img src={logo.anasayfa} alt="Logo" />
           </Link>
         </div>
       </>
     );
   }
-}
+export default LogoBox

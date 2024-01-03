@@ -7,9 +7,10 @@ import LogoBox from './LogoBox';
 import OffCanvasStyleOne from './OffCanvasStyleOne';
 import SearchButton from './SearchButton';
 import NiceSelect from './NiceSelect';
+import { contact } from '../../data/Data';
 
-export default class HeaderOne extends React.Component {
-    render(){
+const HeaderOne = ()=> {
+    const data= contact
         return (
             <>
                 <header className="main-header main-header-three clearfix">
@@ -21,11 +22,11 @@ export default class HeaderOne extends React.Component {
                                     <div className="left">
                                         <NiceSelect />
 
-                                        <ul className="menu-box">
+                                        {/* <ul className="menu-box">
                                             <li><Link to={process.env.PUBLIC_URL + `/`}>People</Link></li>
                                             <li><Link to={process.env.PUBLIC_URL + `/`}>Careers</Link></li>
                                             <li><Link to={process.env.PUBLIC_URL + `/`}>News</Link></li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
 
                                     <div className="right">
@@ -57,7 +58,7 @@ export default class HeaderOne extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <h3>Our Location</h3>
-                                                    <p>25/7 Barden, London</p>
+                                                    <p>{data.adres}</p>
                                                 </div>
                                             </li>
 
@@ -67,7 +68,7 @@ export default class HeaderOne extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <h3>Online Support</h3>
-                                                    <p className="email"><a href="mailto:needhelp@company.com">info@Const24.com</a>
+                                                    <p className="email"><a href={data.email}>{data.email}</a>
                                                     </p>
                                                 </div>
                                             </li>
@@ -78,7 +79,7 @@ export default class HeaderOne extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <h3>Free Contact</h3>
-                                                    <p className="number"><a href="tel:123456789">02-425-562-2457</a></p>
+                                                    <p className="number"><a href={`tel:${data.iletişim}`}>{data.iletişim}</a></p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -112,4 +113,4 @@ export default class HeaderOne extends React.Component {
             </>
         )
     }
-}
+export default HeaderOne

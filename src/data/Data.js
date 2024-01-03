@@ -61,3 +61,20 @@ export const aboutUs = {
   button:"Daha Fazla Bİlgi İcin",
   video:"https://www.youtube.com/watch?v=C6nykXnPV64"
 };
+
+
+export const contact = {
+  iletişim:"05336636336",
+  adres:"25/7 Berlin, Almanya  ",
+  email: "info@eymurautoparts.de ",
+  wp: "",
+  instagram: "",
+  facebook:"",
+}
+
+export const LogoImage={
+  anasayfa: "/assets/images/logo/250x100.jpg",
+  urunler: "",
+  footer:"",
+
+}
