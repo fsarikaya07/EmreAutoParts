@@ -5,10 +5,12 @@ import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carSeatDetail } from "../data/SeatData";
 import EComment from "../components/ecommetGalery/EComment";
+import { useAutoContext } from "../Context/Context";
 
 const SeatDetail = () => {
+  const {lang }= useAutoContext()
   const { slug } = useParams();
-  const data = carSeatDetail;
+  const data = carSeatDetail.find((item) => item.lang === lang).data;
   const dataDetail = data.find((item) => item.slug === slug);
   const imgDetail = dataDetail.image;
   console.log("detail", dataDetail);

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { aboutUs } from "../../data/Data";
+import { useAutoContext } from "../../Context/Context";
 
 const AboutFour = () => {
-    const data = aboutUs
-    
-console.log("object",data);
+  const { lang } = useAutoContext();
+  const data = aboutUs.find((item) => item.lang === lang).data;
+
+  console.log("object", data);
 
   useEffect(() => {
     const $ = window.$;
@@ -22,7 +24,6 @@ console.log("object",data);
     }
   }, []);
 
- 
   return (
     <>
       <div className="about-three">
@@ -31,20 +32,12 @@ console.log("object",data);
             <div className="col-xl-6">
               <div className="about-three__img">
                 <div className="inner">
-                  <img
-                    src={
-                     data.images
-                    }
-                    alt="#"
-                  />
+                  <img src={data.images} alt="#" />
                   <div
                     className="about-three__img-video wow zoomIn"
                     data-wow-delay="100ms"
                   >
-                    <a
-                      href={data.video}
-                      className="video-popup"
-                    >
+                    <a href={data.video} className="video-popup">
                       <div className="about-three__img-video-icon">
                         <span className="fa fa-play"></span>
                         <i className="ripple"></i>
@@ -61,21 +54,15 @@ console.log("object",data);
                   <div className="sec-title__tagline">
                     <h6> {data.title} </h6> <span className="right"></span>
                   </div>
-                  <h2 className="sec-title__title">
-                    {data.title2}
-                  </h2>
+                  <h2 className="sec-title__title">{data.title2}</h2>
                 </div>
 
                 <div className="about-three__content-inner">
                   <div className="text1">
-                    <p>
-                    {data.content}
-                    </p>
+                    <p>{data.content}</p>
                   </div>
                   <div className="text2">
-                    <h4>
-                    {data.content2}
-                    </h4>
+                    <h4>{data.content2}</h4>
                   </div>
                   {/* <ul></ul> */}
                   <div className="about-three__content-btn">

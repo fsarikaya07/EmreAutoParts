@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { carSeatDetail } from "../../data/SeatData";
-
+import { useAutoContext } from "../../Context/Context";
 
 const ProjectThree = () => {
-    const data = carSeatDetail
-    console.log("three",data);
+  const { lang } = useAutoContext();
+  const data = carSeatDetail.find((item) => item.lang === lang).data;
+
+  
   useEffect(() => {
     const $ = window.$;
 
@@ -85,43 +87,28 @@ const ProjectThree = () => {
             <div className="col-xl-12">
               <div className="project-three__carousel owl-carousel owl-theme">
                 {/* Start Project Three Single */}
-                {data.map((item, index) =>{
-                    return (
-                        <div className="project-three__single" key={index}>
-                  <div className="project-three__single-img">
-                    <img
-                      src={
-                       item.image[0]
-                      }
-                      alt="#"
-                    />
-                    <div className="icon-box">
-                      <a
-                        className="img-popup"
-                        href={
-                          item.image
-                        }
-                      >
-                        <span className="icon-plus-sign"></span>
-                      </a>
+                {data.map((item, index) => {
+                  return (
+                    <div className="project-three__single" key={index}>
+                      <div className="project-three__single-img">
+                        <img src={item.image[0]} alt="#" />
+                        <div className="icon-box">
+                          <a className="img-popup" href={item.image}>
+                            <span className="icon-plus-sign"></span>
+                          </a>
+                        </div>
+                        <div className="content-box">
+                          <p>{item.price}</p>
+                          <h3>
+                            <Link to={`/koltuk`}>{item.title}</Link>
+                          </h3>
+                        </div>
+                      </div>
                     </div>
-                    <div className="content-box">
-                      <p>{item.price}</p>
-                      <h3>
-                        <Link
-                          to={`/koltuk`}
-                        >
-                         {item.title}
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                    )
+                  );
                 })}
-                
-                {/* End Project Three Single */}
 
+                {/* End Project Three Single */}
               </div>
             </div>
 

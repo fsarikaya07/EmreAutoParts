@@ -3,10 +3,12 @@ import { Link, useParams } from "react-router-dom";
 import { carMdProduct } from "../data/AccessoriesData";
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
+import { useAutoContext } from "../Context/Context";
 
 const AccProductDenem = () => {
+  const {lang }= useAutoContext()
   const { slug, CategorySlug } = useParams();
-  const data = carMdProduct;
+  const data = carMdProduct.find((item) => item.lang === lang).data;
 
   const dataDetail = data.find((item) => item.slug === slug).data;
   console.log(dataDetail, "dataDetail");

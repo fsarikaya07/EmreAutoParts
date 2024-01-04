@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { categorys } from "../../data/Data";
+import { useAutoContext } from "../../Context/Context";
 
 const ServiceThree = () => {
-  const data = categorys;
+  const { lang}= useAutoContext()
+  const data = categorys.find((item) => item.lang === lang).data;
   
   let publicUrl = process.env.PUBLIC_URL + "/";
 

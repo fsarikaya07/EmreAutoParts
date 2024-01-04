@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carSeatType } from "../data/SeatData";
+import { useAutoContext } from "../Context/Context";
 
 const SeatTypes = () => {
  
-
-  const data = carSeatType;
+  const {lang }= useAutoContext()
+  const data = carSeatType.find((item) => item.lang === lang).data;
   console.log("carSeat", data);
 
   useEffect(() => {

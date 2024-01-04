@@ -23,8 +23,9 @@ import AccModule from "./pages/AccModule";
 import AccProduct from "./pages/AccProduct";
 import AccDetail from "./pages/AccDetail";
 import Loading from "./components/loading/Loading";
-import AccProductDenem from "./pages/AccProductDenme";
+
 import WhatsApp from "./components/whatsApp/WhatsApp";
+import Spare from "./pages/Spare";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,15 +55,10 @@ function App() {
 
             <Route path={`/aksesuar`} exact element={<Accessories />} />
             <Route path={`/aksesuar/:slug`} exact element={<AccModule />} />
-            {/* <Route
-              path={`/aksesuar/:CategorySlug/:slug`}
-              exact
-              element={<AccProduct />}
-            /> */}
             <Route
               path={`/aksesuar/:CategorySlug/:slug`}
               exact
-              element={<AccProductDenem />}
+              element={<AccProduct />}
             />
             <Route
               path={`/aksesuar/:CategorySlug/:Mdslug/:slug`}
@@ -70,9 +66,11 @@ function App() {
               element={<AccDetail />}
             />
 
+            <Route path={`/yedekParca`} exact element={<Spare />} />
+
             <Route path={`/*`} exact element={<Error />} />
           </Routes>
-          <WhatsApp/>
+          <WhatsApp />
           <ScrollToTop
             className="scrollUp"
             smooth

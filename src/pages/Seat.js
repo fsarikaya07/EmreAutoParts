@@ -4,12 +4,13 @@ import { Link, useParams } from "react-router-dom";
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carSeatSkin } from "../data/SeatData";
+import { useAutoContext } from "../Context/Context";
 
 const Seat = () => {
-  
+  const {lang }= useAutoContext()
   const {slug}=useParams()
-  console.log(slug, "publicUrl");
-  const data = carSeatSkin;
+
+  const data = carSeatSkin.find(item=> item.lang=== lang).data
   const dataDetail= data.find(item=> item.slug=== slug).data
   console.log("carSeat", dataDetail);
 

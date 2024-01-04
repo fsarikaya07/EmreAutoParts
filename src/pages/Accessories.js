@@ -2,10 +2,14 @@ import React from "react";
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carTypes } from "../data/AccessoriesData";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Accessories = () => {
   const data = carTypes;
+  const { slug } = useParams();
+
+  const dataDetail = data.find((item) => item.slug === slug).data
+  console.log("acc",dataDetail);
 
   return (
     <>
@@ -15,7 +19,7 @@ const Accessories = () => {
         <div className="container">
           <div className="row">
             {/* Start Blog One Single */}
-            {data.map((item, index) => {
+            {dataDetail.map((item, index) => {
               return (
                 <div
                   className="col-xl-4 col-lg-4 wow animated fadeInUp"
@@ -25,7 +29,9 @@ const Accessories = () => {
                   <div className="blog-one__single">
                     <div className="blog-one__single-img">
                       <div className="inner">
-                        <img src={`${item?.image}`} alt="#" />
+                        <Link to={`/aksesuar/${item.slug}`}>
+                          <img src={`${item?.image}`} alt="#" />
+                        </Link>
                       </div>
                       <div className="blog-one__single-content">
                         <div className="blog-grid__content-bg"></div>

@@ -3,13 +3,17 @@ import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carModule } from "../data/AccessoriesData";
 import { Link, useParams } from "react-router-dom";
+import { useAutoContext } from "../Context/Context";
 
 const AccModule = () => {
+  const {lang}= useAutoContext()
   const { slug } = useParams();
-  const data = carModule;
+  const data = carModule.find((item) => item.lang === lang).data;
 
   const dataDetail = data.find((item) => item.slug === slug).data;
-  console.log(dataDetail, "dataDetail");
+
+  console.log("object",dataDetail);
+ 
   return (
     <>
       <HeaderThree />

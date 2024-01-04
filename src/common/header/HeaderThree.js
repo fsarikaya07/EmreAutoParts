@@ -1,14 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LogoWhite from "./LogoWhite";
 import Nav from "./Nav";
 import MobileMenu from "./MobileMenu";
-import OffCanvasStyleOne from "./OffCanvasStyleOne";
-import SearchButton from "./SearchButton";
+
 import { contact } from "../../data/Data";
+import NiceSelect from "./NiceSelect";
+import { useAutoContext } from "../../Context/Context";
 
 const HeaderThree = () => {
-  const data = contact;
+  const { lang } = useAutoContext();
+  const data = contact.find((item) => item.lang === lang).data;
+  
   return (
     <>
       <header className="main-header main-header-one clearfix">
@@ -22,6 +24,9 @@ const HeaderThree = () => {
 
                 <div className="main-header-one__middle">
                   <ul>
+                  <li>
+                    <NiceSelect/>
+                  </li>
                     <li>
                       <div className="icon">
                         <span className="icon-pin"></span>
@@ -61,9 +66,7 @@ const HeaderThree = () => {
                   </ul>
                 </div>
 
-                <div className="main-header-one__right">
-                  <OffCanvasStyleOne />
-                </div>
+                
               </div>
             </div>
           </div>

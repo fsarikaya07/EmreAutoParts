@@ -3,10 +3,12 @@ import { Link, useParams } from "react-router-dom";
 import { carMdProduct } from "../data/AccessoriesData";
 import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
+import { useAutoContext } from "../Context/Context";
 
-const AccProduct = () => {
+const AccProductDenem = () => {
+  const {lang }= useAutoContext()
   const { slug, CategorySlug } = useParams();
-  const data = carMdProduct;
+  const data = carMdProduct.find((item) => item.lang === lang).data;
 
   const dataDetail = data.find((item) => item.slug === slug).data;
   console.log(dataDetail, "dataDetail");
@@ -14,41 +16,44 @@ const AccProduct = () => {
     <>
       <HeaderThree />
 
-      <section className="blog-one-sec blog-one-sec--two blog-one-sec--two--blog grid">
+      <section className="project-one-sec project-one-sec--three">
         <div className="container">
           <div className="row">
-            {/* Start Blog One Single */}
+            {/* Start project One Single */}
             {dataDetail.map((item, index) => {
               return (
-                <div
-                  className="col-xl-4 col-lg-4 wow animated fadeInUp"
-                  data-wow-delay="0.1s"
-                  key={index}
-                >
-                  <div className="blog-one__single">
-                    <div className="blog-one__single-img">
+                <div className="col-xl-4 col-lg-4" key={index}>
+                  <div
+                    className="project-one__single wow fadeInUp"
+                    data-wow-delay="0ms"
+                    data-wow-duration="1500ms"
+                  >
+                    <div className="project-one__single-img">
                       <div className="inner">
                         <img src={item.image} alt="#" />
-                      </div>
-                      <div className="blog-one__single-content">
-                        <div className="blog-grid__content-bg"></div>
-                        <div className="inner-content">
-                          <ul className="meta-info"></ul>
-                          <h2>
-                            <Link
-                              to={`/aksesuar/${CategorySlug}/${slug}/${item.slug}`}
-                            >
-                              {item.title}
-                            </Link>
-                          </h2>
+                        <div className="project-one__link">
+                          <a className="img-popup" href={item.image}>
+                            <span className="icon-plus-sign"></span>
+                          </a>
                         </div>
+                      </div>
+                      <div className="content-box">
+                        <h2>
+                          <Link
+                            to={`/aksesuar/${CategorySlug}/${slug}/${item.slug}`}
+                          >
+                            {item.title}
+                          </Link>
+                        </h2>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
               );
             })}
-            {/* End Blog One Single */}
+
+            {/* End project One Single */}
           </div>
         </div>
       </section>
@@ -58,4 +63,4 @@ const AccProduct = () => {
   );
 };
 
-export default AccProduct;
+export default AccProductDenem;

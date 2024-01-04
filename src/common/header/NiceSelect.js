@@ -1,28 +1,31 @@
-import React from 'react';
+import React from "react";
+import { useAutoContext } from "../../Context/Context";
 
-export default class NiceSelect extends React.Component {
-    componentDidMount() {
+const NiceSelect = () => {
+  const { lang, setLang } = useAutoContext();
 
-        const $ = window.$;
-        
-        $('select').niceSelect();
-          
-    }
-    render(){
-        return (
-            <>
-                <div className="location-box">
-                    <div className="select-box">
-                        <select className="selectmenu wide">
-                            <option selected="selected">New York</option>
-                            <option>Sydney</option>
-                            <option>Khulna</option>
-                            <option>Dhaka</option>
-                            <option>Los Angeles</option>
-                        </select>
-                    </div>
-                </div>
-            </>
-        )
-    }
-}
+  const handleLangChange = (selectedLang) => {
+    setLang(selectedLang);
+    // Seçilen dil bilgisini local storage'a kaydet
+    localStorage.setItem("selectedLang", selectedLang);
+  };
+
+  return (
+    <>
+      <div className="location-box">
+        <div className="select-box">
+          <select
+            className="selectmenu wide"
+            value={lang} // Set the value attribute to reflect the current language
+            onChange={(e) => handleLangChange(e.target.value)}
+          >
+            <option value="tr">Türkçe</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default NiceSelect;

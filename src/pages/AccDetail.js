@@ -4,10 +4,12 @@ import HeaderThree from '../common/header/HeaderThree'
 import { useParams } from 'react-router-dom'
 import { carAccDetail } from '../data/AccessoriesData'
 import EComment from '../components/ecommetGalery/EComment'
+import { useAutoContext } from '../Context/Context'
 
 const AccDetail = () => {
     const {slug}=useParams()
-    const data= carAccDetail
+    const {lang}=useAutoContext()
+    const data= carAccDetail.find(item=> item.lang=== lang).data
     const dataDetail= data.find(item=> item.slug=== slug)
     const imgDetail= dataDetail.image
     console.log("detail", imgDetail);
