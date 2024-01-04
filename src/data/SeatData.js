@@ -24,11 +24,11 @@ export const carSeatType = [
     data: [
       {
         image: "/assets/images/koltuk/img1.jpg",
-        title: "Deri Koltuk",
+        title: "Leder Sitzbänke",
         slug: "deri",
       },
       {
-        image: "/assets/images/koltuk/img2.jpg",
+        image: "/assets/images/koltuk/kunstleder1.jpg",
         title: "Suni Deri Koltuk",
         slug: "suni-deri",
       },
