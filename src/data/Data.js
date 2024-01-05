@@ -33,16 +33,16 @@ export const navbar = [
         slug: "/index",
       },
       {
-        title: "Sessel",
+        title: "Sitzbänke",
         slug: "/sessel",
       },
       {
-        title: "Zubehörteil",
+        title: "Autozubehör",
         slug: "/zubehörteil",
       },
 
       {
-        title: "Yedek Parca",
+        title: "Autoteile",
         slug: "/yedekParca",
       },
       {
