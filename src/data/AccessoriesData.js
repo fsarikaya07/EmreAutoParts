@@ -3,24 +3,9 @@ export const carTypes = [
     lang: "tr",
     data: [
       {
-        image: "/assets/images/arabamarka/bmw.png",
-        title: "BMW",
-        slug: "bmw",
-      },
-      {
         image: "/assets/images/arabamarka/mercedes.jpg",
         title: "Mercedes",
         slug: "mercedes",
-      },
-      {
-        image: "/assets/images/arabamarka/vw.jpg",
-        title: "Volkswagen",
-        slug: "volkswagen",
-      },
-      {
-        image: "/assets/images/arabamarka/vw.jpg",
-        title: "Seat",
-        slug: "seat",
       },
     ],
   },
@@ -28,24 +13,9 @@ export const carTypes = [
     lang: "de",
     data: [
       {
-        image: "/assets/images/arabamarka/bmw.png",
-        title: "BMW",
-        slug: "bmw",
-      },
-      {
         image: "/assets/images/arabamarka/mercedes.jpg",
         title: "Mercedes",
         slug: "mercedes",
-      },
-      {
-        image: "/assets/images/arabamarka/vw.jpg",
-        title: "Volkswagen",
-        slug: "volkswagen",
-      },
-      {
-        image: "/assets/images/arabamarka/vw.jpg",
-        title: "Seat",
-        slug: "seat",
       },
     ],
   },
@@ -55,6 +25,7 @@ export const carModule = [
   {
     lang: "tr",
     data: [
+      // Bmw
       {
         image: "/assets/images/arabamarka/bmw.png",
         slug: "bmw",
@@ -76,27 +47,39 @@ export const carModule = [
           },
         ],
       },
+      // Mercedes
       {
         image: "/assets/images/arabamarka/mercedes.jpg",
         slug: "mercedes",
         data: [
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/arabamarka/vitow447.jpg",
+            title: "Vito W447",
+            slug: "vito447",
           },
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/arabamarka/vitow639.jpg",
+            title: "Vito W639",
+            slug: "vito639",
           },
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/arabamarka/viano.jpg",
+            title: "Viano",
+            slug: "viano",
+          },
+          {
+            image: "/assets/images/arabamarka/sprinterw906.jpg",
+            title: "Sprinter W906",
+            slug: "sprinter906",
+          },
+          {
+            image: "/assets/images/arabamarka/sprinterw907.jpg",
+            title: "Sprinter W907",
+            slug: "sprinter907",
           },
         ],
       },
+      // Voswogen
       {
         image: "/assets/images/arabamarka/vw.jpg",
         slug: "volkswagen",
@@ -118,6 +101,7 @@ export const carModule = [
           },
         ],
       },
+      // Seat
       {
         image: "/assets/images/arabamarka/vw.jpg",
         slug: "seat",
@@ -171,18 +155,18 @@ export const carModule = [
         data: [
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            title: "Yan Basamaklar",
+            slug: "vito447",
           },
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
             title: "MERCEDES VİTO",
-            slug: "vito",
+            slug: "vito447",
           },
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
             title: "MERCEDES VİTO",
-            slug: "vito",
+            slug: "vito447",
           },
         ],
       },
@@ -283,28 +267,60 @@ export const carMdProduct = [
       // Mercedes
       {
         image: "/assets/images/arabamarka/mercedes.jpg",
-        slug: "vito",
+        slug: "vito447",
         data: [
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit1.jpg",
+            title: "Blackline Küçük Orta Yan Basamak",
+            slug: "vito447-yan-bas-blc-km",
           },
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang1.jpg",
+            title: "Blackline Uzun Yan Basamak",
+            slug: "vito447-yan-bas-blc-l",
           },
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO",
-            slug: "vito",
+            image: "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur1.jpg",
+            title: "Dotline Siyah Kısa Yan Basamak",
+            slug: "vito447-yan-bas-dl-k",
           },
           {
-            image: "/assets/images/arabamarka/mercedes.jpg",
-            title: "MERCEDES VİTO-1",
-            slug: "vito-1",
+            image: "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang1.jpg",
+            title: "Dotline Siyah Uzun Yan Basamak",
+            slug: "vito447-yan-bas-dl-l",
           },
+          {
+            image: "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur1.jpg",
+            title: "Dotline Beyaz Kısa Yan Basamak",
+            slug: "vito447-yan-bas-dl-k-w",
+          },
+          {
+            image: "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang1.jpg",
+            title: "Dotline Beyaz Uzun Yan Basamak",
+            slug: "vito447-yan-bas-dl-l-w",
+          },
+          {
+            image: "/assets/images/aksesuarlar/aynakapagi/spiegelabdeckung1.jpg",
+            title: "Ayna Kapağı Sağ-Sol",
+            slug: "vito447-ayna-kapak",
+          },
+          {
+            image: "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+            title: "Solid Tavan Çıtası - Kısa",
+            slug: "vito447-solid-tavan-çita-k",
+          },
+          {
+            image: "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+            title: "Solid Tavan Çıtası - Orta",
+            slug: "vito447-solid-tavan-çita-o",
+          },
+          {
+            image: "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+            title: "Solid Tavan Çıtası - Uzun",
+            slug: "vito447-solid-tavan-çita-u",
+          },
+          
+      
         ],
       },
 
@@ -318,16 +334,7 @@ export const carMdProduct = [
             title: "Volkswagen Transporter",
             slug: "transporter",
           },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
+          
         ],
       },
 
@@ -341,16 +348,7 @@ export const carMdProduct = [
             title: "Volkswagen Transporter",
             slug: "transporter",
           },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
+          
         ],
       },
     ],
@@ -368,16 +366,7 @@ export const carMdProduct = [
             title: "BMW 1 Serisi (E87) Ayna Kapağı (Yarasa) Piano Siyah ABS",
             slug: "bmw-1-ayna-kapag",
           },
-          {
-            image: "/assets/images/urunler/bagajhavuzu.jpg",
-            title: "BMW 1 Serisi (E87) Bagaj Havuzu (Plastik)",
-            slug: "bmw-1-bagaj-havuzu",
-          },
-          {
-            image: "/assets/images/urunler/tavan.jpg",
-            title: "BMW 1 Serisi E87 Elegance v3 Ara Atkı Alüminyum 2 Parça",
-            slug: "x5",
-          },
+          
         ],
       },
       {
@@ -405,22 +394,22 @@ export const carMdProduct = [
       // Mercedes
       {
         image: "/assets/images/arabamarka/mercedes.jpg",
-        slug: "vito",
+        slug: "vito447",
         data: [
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
             title: "MERCEDES VİTO",
-            slug: "vito",
+            slug: "vito447",
           },
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
             title: "MERCEDES VİTO",
-            slug: "vito",
+            slug: "vito447",
           },
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
             title: "MERCEDES VİTO",
-            slug: "vito",
+            slug: "vito447",
           },
           {
             image: "/assets/images/arabamarka/mercedes.jpg",
@@ -440,16 +429,6 @@ export const carMdProduct = [
             title: "Volkswagen Transporter",
             slug: "transporter",
           },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
         ],
       },
 
@@ -458,16 +437,6 @@ export const carMdProduct = [
         image: "/assets/images/arabamarka/vw.jpg",
         slug: "seat-leon",
         data: [
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
-          {
-            image: "/assets/images/arabamarka/vw.jpg",
-            title: "Volkswagen Transporter",
-            slug: "transporter",
-          },
           {
             image: "/assets/images/arabamarka/vw.jpg",
             title: "Volkswagen Transporter",
@@ -484,45 +453,133 @@ export const carAccDetail = [
     data: [
       {
         image: [
-          "/assets/images/koltuk/img1.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit4.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit5.jpg",
         ],
-        title: "Ürün 1 Deri",
+        title: "Blackline Siyah Küçük - Orta Yan Basamak",
         module: "BMW M3",
         price: "$19.99",
         contetn: " Deneme      ",
-        slug: "bmw-1-ayna-kapag",
+        slug: "vito447-yan-bas-blc-km",
       },
       {
         image: [
-          "/assets/images/koltuk/img2.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang4.jpg",
         ],
         title: "Ürün 2 Suni Deri",
         module: "BMW M3",
         price: "$24.99",
         contetn: "",
-        slug: "suni-deri",
+        slug: "vito447-yan-bas-blc-l",
       },
       {
         image: [
-          "/assets/images/koltuk/img3.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur4.jpg",
         ],
         title: "Ürün 3 Kumaş",
         module: "BMW M3",
         price: "$29.99",
         contetn: "",
-        slug: "kumas-k",
+        slug: "vito447-yan-bas-dl-k",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-l",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-k-w",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-l-w",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/aynakapagi/spiegelabdeckung1.jpg",
+          "/assets/images/aksesuarlar/aynakapagi/spiegelabdeckung2.jpg",
+          "/assets/images/aksesuarlar/aynakapagi/spiegelabdeckung3.jpg",
+        ],
+        title: "Ayna Kapağı Sağ-Sol",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-ayna-kapak",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling2.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling3.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling4.jpg",
+        ],
+        title: "Solid Tavan Çıtası - Kısa",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-solid-tavan-çita-k",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling2.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling3.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling5.jpg",
+        ],
+        title: "Solid Tavan Çıtası - Orta",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-solid-tavan-çita-o",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/tavancitasi/dachreling1.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling2.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling3.jpg",
+          "/assets/images/aksesuarlar/tavancitasi/dachreling5.jpg",
+        ],
+        title: "Solid Tavan Çıtası - Uzun",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-solid-tavan-çita-u",
       },
     ],
   },
@@ -531,45 +588,82 @@ export const carAccDetail = [
     data: [
       {
         image: [
-          "/assets/images/koltuk/img1.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit4.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-kur_mit5.jpg",
         ],
-        title: "Ürün 1 Deri",
+        title: "Blackline Siyah Küçük - Orta Yan Basamak",
         module: "BMW M3",
         price: "$19.99",
         contetn: " Deneme      ",
-        slug: "bmw-1-ayna-kapag",
+        slug: "vito447-yan-bas-blc-km",
       },
       {
         image: [
-          "/assets/images/koltuk/img2.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/blcline-lang4.jpg",
         ],
         title: "Ürün 2 Suni Deri",
         module: "BMW M3",
         price: "$24.99",
         contetn: "",
-        slug: "suni-deri",
+        slug: "vito447-yan-bas-blc-l",
       },
       {
         image: [
-          "/assets/images/koltuk/img3.jpg",
-          "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg",
-          "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-kur4.jpg",
         ],
         title: "Ürün 3 Kumaş",
         module: "BMW M3",
         price: "$29.99",
         contetn: "",
-        slug: "kumas-k",
+        slug: "vito447-yan-bas-dl-k",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-sch-lang4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-l",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-kur4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-k-w",
+      },
+      {
+        image: [
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang1.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang2.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang3.jpg",
+          "/assets/images/aksesuarlar/yan-basamaklar/dtline-we-lang4.jpg",
+        ],
+        title: "Ürün 3 Kumaş",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "vito447-yan-bas-dl-l-w",
       },
     ],
   },
