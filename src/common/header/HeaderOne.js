@@ -17,7 +17,7 @@ const HeaderOne = () => {
     <>
       <header className="main-header main-header-three clearfix">
         <div className="main-header-three__wrapper">
-          <div className="main-header-three__top clearfix">
+          {/* <div className="main-header-three__top clearfix">
             <div className="container">
               <div className="main-header-three__top-inner">
                 <div className="left">
@@ -52,7 +52,7 @@ const HeaderOne = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="main-header-three__middle">
             <div className="container">
@@ -62,12 +62,11 @@ const HeaderOne = () => {
                 <div className="contact-info">
                   <ul>
                     <li>
-                      <div className="icon-box">
+                       <NiceSelect/>
+                      {/* <div className="icon-box">
                         <span className="icon-pin"></span>
-                      </div>
+                      </div> */}
                       <div className="text-box">
-                        <h3>Our Location</h3>
-                        <p>{data.adres}</p>
                       </div>
                     </li>
 
@@ -106,11 +105,11 @@ const HeaderOne = () => {
                 <div className="main-header-one__bottom-left">
                   <nav className="main-menu main-menu--1">
                     <div className="main-menu__inner">
-                      <MobileMenu />
                       <div className="stricky-one-logo">
                         <LogoBlack />
                       </div>
                       <Nav />
+                      <MobileMenu />
                     </div>
                   </nav>
                 </div>
