@@ -93,7 +93,7 @@ const ProjectThree = () => {
                       <div className="project-three__single-img">
                         <img src={item.image[0]} alt="#" />
                         <div className="icon-box">
-                          <a className="img-popup" href={item.image}>
+                          <a className="img-popup" href={item.image[0]}>
                             <span className="icon-plus-sign"></span>
                           </a>
                         </div>

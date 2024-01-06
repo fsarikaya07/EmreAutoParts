@@ -8,7 +8,7 @@ import { useAutoContext } from "../Context/Context";
 
 const SeatTypes = () => {
  
-  const {lang }= useAutoContext()
+  const {lang ,seat}= useAutoContext()
   const data = carSeatType.find((item) => item.lang === lang).data;
   console.log("carSeat", data);
 
@@ -73,7 +73,7 @@ const SeatTypes = () => {
                            
                           </ul>
                           <h2>
-                            <Link to={ `/koltuk/${item.slug}`}>
+                            <Link to={ `/${seat}/${item.slug}`}>
                               {item.title}
                             </Link>
                           </h2>

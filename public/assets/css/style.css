@@ -24,7 +24,7 @@
   --thm-base-rgb: 255, 94, 20;
   --thm-black: #00235a;
   --thm-black-rgb: 0, 22, 89;
-  --thm-gray: #838691;
+  --thm-gray: #ffffff;
   --thm-gray-rgb: 131, 134, 145;
   --thm-primary: #00235a;
   --thm-primary-rgb: 0, 35, 90;
@@ -1521,7 +1521,7 @@ a.sc-hLBbgP {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--thm-primary);
+  background: var(--thm-base);
 }
 
 .main-header-one__left {
@@ -1571,7 +1571,7 @@ a.sc-hLBbgP {
   bottom: 3px;
   right: 0;
   width: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgb(252, 252, 252);
 }
 
 .main-header-one__middle ul li:last-child:before {
@@ -1588,7 +1588,7 @@ a.sc-hLBbgP {
 }
 
 .main-header-one__middle ul li:hover .icon {
-  color: var(--thm-base);
+  color:  #2300e7c9;
 }
 
 .main-header-one__middle ul li .text {
@@ -1623,7 +1623,7 @@ a.sc-hLBbgP {
 }
 
 .main-header-one__middle ul li .text .email a {
-  color: var(--thm-gray);
+  color: #ffffff;
   transition: all 200ms linear;
   transition-delay: 0.1s;
 }
@@ -1641,7 +1641,7 @@ a.sc-hLBbgP {
 }
 
 .main-header-one__middle ul li .text .number a {
-  color: var(--thm-gray);
+  color: #ffffff;
   transition: all 200ms linear;
   transition-delay: 0.1s;
 }
@@ -9074,7 +9074,7 @@ a.sc-hLBbgP {
 }
 
 .main-header-three__middle .contact-info ul li .text-box p a {
-  color: var(--thm-gray);
+  color: var(--thm-base);
   transition: all 200ms linear;
   transition-delay: 0.1s;
 }
@@ -9287,6 +9287,7 @@ a.sc-hLBbgP {
 }
 
 .services-three__single__bg {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -9298,7 +9299,7 @@ a.sc-hLBbgP {
   transform: scaleX(0.7) rotateX(0deg);
   transition: all 0.4s linear;
   border-radius: 10px;
-  opacity: 0;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -9310,7 +9311,7 @@ a.sc-hLBbgP {
 .services-three__single:hover .services-three__single__bg {
   transform: scaleX(1) rotateX(0deg);
   transition: all 0.4s linear;
-  opacity: 1;
+  opacity: 0;
 }
 
 .services-three__single__bg::before {
@@ -9319,9 +9320,9 @@ a.sc-hLBbgP {
   left: 0;
   bottom: 0;
   right: 0;
-  /* background: rgba(var(--thm-base-rgb), 0.95); */
+  background: rgba(var(--thm-base-rgb), 0.95);
   opacity: 0.8;
-  background: var(--thm-base);
+  /* background: var(--thm-base); */
   border-radius: 10px;
   content: "";
   z-index: -2;

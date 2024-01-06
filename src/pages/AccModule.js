@@ -6,7 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import { useAutoContext } from "../Context/Context";
 
 const AccModule = () => {
-  const {lang}= useAutoContext()
+  const {lang,acc}= useAutoContext()
   const { slug } = useParams();
   const data = carModule.find((item) => item.lang === lang).data;
 
@@ -39,7 +39,7 @@ const AccModule = () => {
                         <div className="inner-content">
                           <ul className="meta-info"></ul>
                           <h2>
-                            <Link to={`/aksesuar/${slug}/${item.slug}`}>
+                            <Link to={`/${acc}/${slug}/${item.slug}`}>
                               {item.title}
                             </Link>
                           </h2>

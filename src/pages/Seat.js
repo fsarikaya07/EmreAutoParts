@@ -7,7 +7,7 @@ import { carSeatSkin } from "../data/SeatData";
 import { useAutoContext } from "../Context/Context";
 
 const Seat = () => {
-  const {lang }= useAutoContext()
+  const {lang ,seat }= useAutoContext()
   const {slug}=useParams()
 
   const data = carSeatSkin.find(item=> item.lang=== lang).data
@@ -72,7 +72,7 @@ const Seat = () => {
                         <div className="inner-content">
                        
                           <h2>
-                            <Link to={ `/koltuk/${slug}/${item.slug}`}>
+                            <Link to={ `/${seat}/${slug}/${item.slug}`}>
                               {item.title}
                             </Link>
                           </h2>

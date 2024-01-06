@@ -25,7 +25,7 @@ const HeaderThree = () => {
                 <div className="main-header-one__middle">
                   <ul>
                   <li>
-                    <NiceSelect/>
+                    {/* <NiceSelect/> */}
                   </li>
                     <li>
                       <div className="icon">

@@ -57,13 +57,10 @@ const ServiceThree = () => {
                       className="services-three__single__bg"
                       style={{ backgroundImage: `url(${item.images})` }}
                     ></div>
-                    <div className="services-three__single-icon">
-                      <span className="icon-crane"></span>
-                    </div>
                     <h3>
                       <Link to={item.slug}>{item.title}</Link>
                     </h3>
-                    <p>{item.content}</p>
+                    <p className="">{item.content}</p>
                     <div className="btn-box">
                       <Link to={`/${item.slug}`}>
                         <span className="icon-right-arrow"></span>

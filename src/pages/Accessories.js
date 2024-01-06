@@ -3,9 +3,11 @@ import HeaderThree from "../common/header/HeaderThree";
 import FooterOne from "../common/footer/FooterOne";
 import { carTypes } from "../data/AccessoriesData";
 import { Link, useParams } from "react-router-dom";
+import { useAutoContext } from "../Context/Context";
 
 const Accessories = () => {
   const data = carTypes;
+  const {acc}=useAutoContext()
   const { slug } = useParams();
 
   const dataDetail = data.find((item) => item.slug === slug).data
@@ -29,7 +31,7 @@ const Accessories = () => {
                   <div className="blog-one__single">
                     <div className="blog-one__single-img">
                       <div className="inner">
-                        <Link to={`/aksesuar/${item.slug}`}>
+                        <Link to={`/${acc}/${item.slug}`}>
                           <img src={`${item?.image}`} alt="#" />
                         </Link>
                       </div>
@@ -38,7 +40,7 @@ const Accessories = () => {
                         <div className="inner-content">
                           <ul className="meta-info"></ul>
                           <h2>
-                            <Link to={`/aksesuar/${item.slug}`}>
+                            <Link to={`/${acc}/${item.slug}`}>
                               {item.title}
                             </Link>
                           </h2>

@@ -209,11 +209,12 @@ export const carSeatDetail = [
     data: [
       {
         image: [
-          "/assets/images/koltuk/img2.jpg",
-          "/assets/images/koltuk/img2.jpg",
-          "/assets/images/koltuk/img2.jpg",
+          "/assets/images/koltuk/kunstleder1.jpg",
+          "/assets/images/koltuk/kunstleder2.jpg",
+          "/assets/images/koltuk/kunstleder3.jpg",
+          "/assets/images/koltuk/kunstleder4.jpg",
         ],
-        title: "Kunstleder Sitzbänke",
+        title: "Suni Deri 2+1",
         module: "BMW M3",
         price: "$24.99",
         contetn: "",
@@ -221,11 +222,11 @@ export const carSeatDetail = [
       },
       {
         image: [
-          "/assets/images/koltuk/img3.jpg",
-          "/assets/images/koltuk/img3.jpg",
-          "/assets/images/koltuk/img3.jpg",
+          "/assets/images/koltuk/stoff1.jpg",
+          "/assets/images/koltuk/stoff2.jpg",
+          "/assets/images/koltuk/stoff3.jpg",
         ],
-        title: "Ürün 3 Kumaş",
+        title: "Kumaş Koltuk 2+1",
         module: "BMW M3",
         price: "$29.99",
         contetn: "",
@@ -233,11 +234,21 @@ export const carSeatDetail = [
       },
       {
         image: [
-          "/assets/images/koltuk/img1.jpg",
-          "/assets/images/koltuk/img1.jpg",
-          "/assets/images/koltuk/img1.jpg",
+          "/assets/images/koltuk/v-klasse-stoff1.jpg",
+          "/assets/images/koltuk/v-klasse-stoff2.jpg",
         ],
-        title: "Ürün 1 Deri",
+        title: "V-Sınıfı Kumaş Koltuk 2+1",
+        module: "BMW M3",
+        price: "$29.99",
+        contetn: "",
+        slug: "v-klas-kumas-k",
+      },
+      {
+        image: [
+          "/assets/images/koltuk/v-klasse-leder1.jpg",
+          "/assets/images/koltuk/v-klasse-leder2.jpeg",
+        ],
+        title: "V-Sınıfı 2+1 ",
         module: "BMW M3",
         price: "$19.99",
         contetn: " Deneme      ",
@@ -245,4 +256,5 @@ export const carSeatDetail = [
       },
     ],
   },
+ 
 ];

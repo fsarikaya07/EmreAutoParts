@@ -92,22 +92,22 @@ export default class FooterOne extends React.Component {
                         data-wow-delay="0.3s"
                       >
                         <div className="footer-widget__column footer-widget__services">
-                          <h2 className="footer-widget__title">Our Services</h2>
+                          <h2 className="footer-widget__title">Kategory</h2>
                           <ul className="footer-widget__services-list">
                             <li className="footer-widget__services-list-item">
-                              <Link to="/about-one">About Company</Link>
+                              <Link to="/about-one">Koltuk</Link>
                             </li>
                             <li className="footer-widget__services-list-item">
-                              <Link to="/services">Company Services</Link>
+                              <Link to="/services">Aksesuarlar</Link>
                             </li>
                             <li className="footer-widget__services-list-item">
-                              <Link to="/blog">Comapny News</Link>
+                              <Link to="/blog">Yedek Parca</Link>
                             </li>
                             <li className="footer-widget__services-list-item">
-                              <Link to="/portfolio">Company Project</Link>
+                              <Link to="/portfolio">Hakkımızda</Link>
                             </li>
                             <li className="footer-widget__services-list-item">
-                              <Link to="/">Our Case Study</Link>
+                              <Link to="/">İletişim</Link>
                             </li>
                           </ul>
                         </div>
@@ -118,28 +118,11 @@ export default class FooterOne extends React.Component {
                         data-wow-delay="0.5s"
                       >
                         <div className="footer-widget__column footer-widget__explore">
-                          <h2 className="footer-widget__title">Our Explore</h2>
-                          <ul className="footer-widget__explore-list">
-                            <li className="footer-widget__explore-list-item">
-                              <Link to="/">Project Planing</Link>
-                            </li>
-                            <li className="footer-widget__explore-list-item">
-                              <Link to="/">Cost Calculator</Link>
-                            </li>
-                            <li className="footer-widget__explore-list-item">
-                              <Link to="/">Our Testinonials</Link>
-                            </li>
-                            <li className="footer-widget__explore-list-item">
-                              <Link to="/">Mining Sector</Link>
-                            </li>
-                            <li className="footer-widget__explore-list-item">
-                              <Link to="/">Closure & Reform</Link>
-                            </li>
-                          </ul>
+                          <h2 className="footer-widget__title"><Link to="/">Impressum</Link></h2>
                         </div>
                       </div>
 
-                      <div
+                      {/* <div
                         className="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
                         data-wow-delay="0.7s"
                       >
@@ -221,7 +204,7 @@ export default class FooterOne extends React.Component {
                             </ul>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

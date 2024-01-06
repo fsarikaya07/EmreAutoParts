@@ -26,14 +26,17 @@ import Loading from "./components/loading/Loading";
 
 import WhatsApp from "./components/whatsApp/WhatsApp";
 import Spare from "./pages/Spare";
+import { useAutoContext } from "./Context/Context";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const { seat, aboutUs, contact, acc, spare,lang } = useAutoContext();
   useEffect(() => {
+    setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
-  }, []);
+    }, 2000);
+  }, [lang]);
   return (
     <>
       {isLoading ? (
@@ -45,28 +48,28 @@ function App() {
             <Route path={`/`} exact element={<HomeDefault />} />
             <Route path={`/index`} exact element={<HomeDefault />} />
 
-            <Route path={`/koltuk`} exact element={<SeatTypes />} />
-            <Route path={`/koltuk/:slug`} exact element={<Seat />} />
+            <Route path={`/${seat}`} exact element={<SeatTypes />} />
+            <Route path={`/${seat}/:slug`} exact element={<Seat />} />
             <Route
-              path={`/koltuk/:categorySlug/:slug`}
+              path={`/${seat}/:categorySlug/:slug`}
               exact
               element={<SeatDetail />}
             />
 
-            <Route path={`/aksesuar`} exact element={<Accessories />} />
-            <Route path={`/aksesuar/:slug`} exact element={<AccModule />} />
+            <Route path={`/${acc}`} exact element={<Accessories />} />
+            <Route path={`/${acc}/:slug`} exact element={<AccModule />} />
             <Route
-              path={`/aksesuar/:CategorySlug/:slug`}
+              path={`/${acc}/:CategorySlug/:slug`}
               exact
               element={<AccProduct />}
             />
             <Route
-              path={`/aksesuar/:CategorySlug/:Mdslug/:slug`}
+              path={`/${acc}/:CategorySlug/:Mdslug/:slug`}
               exact
               element={<AccDetail />}
             />
 
-            <Route path={`/yedekParca`} exact element={<Spare />} />
+            <Route path={`/${spare}`} exact element={<Spare />} />
 
             <Route path={`/*`} exact element={<Error />} />
           </Routes>

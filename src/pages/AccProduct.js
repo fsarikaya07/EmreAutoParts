@@ -6,7 +6,7 @@ import FooterOne from "../common/footer/FooterOne";
 import { useAutoContext } from "../Context/Context";
 
 const AccProductDenem = () => {
-  const {lang }= useAutoContext()
+  const {lang, acc }= useAutoContext()
   const { slug, CategorySlug } = useParams();
   const data = carMdProduct.find((item) => item.lang === lang).data;
 
@@ -40,7 +40,7 @@ const AccProductDenem = () => {
                       <div className="content-box">
                         <h2>
                           <Link
-                            to={`/aksesuar/${CategorySlug}/${slug}/${item.slug}`}
+                            to={`/${acc}/${CategorySlug}/${slug}/${item.slug}`}
                           >
                             {item.title}
                           </Link>

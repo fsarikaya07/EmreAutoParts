@@ -4,7 +4,7 @@ export const navbar = [
     data: [
       {
         title: "AnaSayfa",
-        slug: "/index",
+        slug: "/",
       },
       {
         title: "Koltuk",
@@ -23,6 +23,10 @@ export const navbar = [
         title: "Hakkımızda",
         slug: "/hakkımızda",
       },
+      {
+        title: "İletişim",
+        slug: "/iletişim",
+      },
     ],
   },
   {
@@ -30,7 +34,7 @@ export const navbar = [
     data: [
       {
         title: "AnaSayfa1",
-        slug: "/index",
+        slug: "/",
       },
       {
         title: "Sitzbänke",
@@ -49,6 +53,10 @@ export const navbar = [
         title: "Hakkımızda",
         slug: "/hakkımızda",
       },
+      {
+        title: "İletişim",
+        slug: "/iletişim",
+      },
     ],
   },
 ];
@@ -56,22 +64,43 @@ export const navbar = [
 export const slider = [
   {
     lang: "tr",
-    data: {
-      title: "AnaSayfa",
-      title2: "",
-      content: "",
-      images: "",
-    },
+    data: [
+      {
+        title: "AnaSayfa",
+        title2: "SLider Deneme",
+        content:
+          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+        images: "/assets/images/slider/slider1.jpg",
+      },
+      {
+        title: "Slider",
+        title2: "SLider Deneme",
+        content:
+          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+        images: "/assets/images/slider/slider2.jpg",
+      },
+    ],
   },
   {
     lang: "de",
-    data: {
-      title: "Startseite",
-      title2: "",
-      content: "",
-      images: "",
-    },
+    data: [
+      {
+        title: "AnaSayfa",
+        title2: "SLider Deneme",
+        content:
+          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+        images: "/assets/images/slider/slider1.jpg",
+      },
+      {
+        title: "Slider",
+        title2: "SLider Deneme",
+        content:
+          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+        images: "/assets/images/slider/slider2.jpg",
+      },
+    ],
   },
+ 
 ];
 export const categorys = [
   {
@@ -98,7 +127,7 @@ export const categorys = [
     ],
   },
   {
-    lang: "en",
+    lang: "de",
     data: [
       {
         title: "Koltuk",
@@ -175,8 +204,7 @@ export const contact = [
     },
   },
 ];
-{
-}
+
 
 export const LogoImage = {
   anasayfa: "/assets/images/logo/250x100.jpg",
