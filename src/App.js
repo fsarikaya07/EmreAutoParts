@@ -27,6 +27,8 @@ import Loading from "./components/loading/Loading";
 import WhatsApp from "./components/whatsApp/WhatsApp";
 import Spare from "./pages/Spare";
 import { useAutoContext } from "./Context/Context";
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/Hakkımızda";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -70,6 +72,8 @@ function App() {
             />
 
             <Route path={`/${spare}`} exact element={<Spare />} />
+            <Route path={`/${contact}`} exact element={<Contact />} />
+            <Route path={`/${aboutUs}`} exact element={<AboutUs />} />
 
             <Route path={`/*`} exact element={<Error />} />
           </Routes>

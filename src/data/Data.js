@@ -68,15 +68,13 @@ export const slider = [
       {
         title: "Ürünler",
         title2: "Araçlarınız için orjinal koltuklar.",
-        content:
-          "Deri, Kumaş, Suni Deri, V-Sınıfı",
+        content: "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider1.jpg",
       },
       {
         title: "Ürünler",
         title2: "Araçlarınız için orjinal koltuklar.",
-        content:
-          "Deri, Kumaş, Suni Deri, V-Sınıfı",
+        content: "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider2.jpg",
       },
     ],
@@ -87,21 +85,17 @@ export const slider = [
       {
         title: "Sitzbänke",
         title2: "Araçlarınız için orjinal koltuklar.",
-        content:
-          "Deri, Kumaş, Suni Deri, V-Sınıfı",
+        content: "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider1.jpg",
       },
       {
         title: "Sitzbänke",
         title2: "SLider Deneme",
-        content:
-          "Deri, Kumaş, Suni Deri, V-Sınıfı",
+        content: "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider2.jpg",
       },
     ],
   },
- 
- 
 ];
 export const categorys = [
   {
@@ -164,6 +158,7 @@ export const aboutUs = [
       images: "/assets/images/logo/logo2.jpg",
       button: "Daha Fazla Bİlgi İcin",
       video: "https://www.youtube.com/watch?v=C6nykXnPV64",
+      firma: "EmreEymur A.Ş",
     },
   },
   {
@@ -177,6 +172,7 @@ export const aboutUs = [
       images: "/assets/images/logo/logo2.jpg",
       button: "Daha Fazla Bİlgi İcin",
       video: "https://www.youtube.com/watch?v=C6nykXnPV64",
+      firma: "EmreEymur A.Ş",
     },
   },
 ];
@@ -191,6 +187,7 @@ export const contact = [
       wp: "",
       instagram: "",
       facebook: "",
+      firma: "EmreEymur A.Ş",
     },
   },
   {
@@ -202,13 +199,42 @@ export const contact = [
       wp: "",
       instagram: "",
       facebook: "",
+      firma: "EmreEymur A.Ş",
     },
   },
 ];
-
 
 export const LogoImage = {
   anasayfa: "/assets/images/logo/250x100.jpg",
   urunler: "",
   footer: "",
 };
+
+export const AboutUsData = [
+  {
+    lang: "tr",
+    data: {
+      about:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, unde iste! Quibusdam quos nulla eaque. Facere odit debitis, dolore et eos fugit magni dignissimos dolorem minima aspernatur, molestiae deserunt distinctio!  ",
+      hakkimizda: "HAKKIMIZDA",
+      title1: "KALİTEDEN ÖDÜN VERMEDEN",
+      title2: "Sizler İçin Buradayız ",
+      altTitle1: "Müşteri Memnuniyeti   ",
+      altTitle2: "En Hızlı Teslimat ",
+      img:""
+    },
+  },
+  {
+    lang: "de",
+    data: {
+      about:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, unde iste! Quibusdam quos nulla eaque. Facere odit debitis, dolore et eos fugit magni dignissimos dolorem minima aspernatur, molestiae deserunt distinctio!  ",
+      hakkimizda: "ÜBER UNS",
+      title1: "OHNE KOMPROMISSE BEI ​​DER QUALITÄT",
+      title2: "Wir sind für dich da",
+      altTitle1: "Kundenzufriedenheit",
+      altTitle2: "Schnellste Lieferung ",
+      img:""
+    },
+  },
+];
