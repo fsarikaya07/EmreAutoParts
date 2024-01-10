@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { useAutoContext } from "../../Context/Context";
 import { slider } from "../../data/Data";
 

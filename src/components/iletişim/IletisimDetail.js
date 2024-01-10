@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { useAutoContext } from "../../Context/Context";
 import { LangWords } from "../../data/LangData";
 
