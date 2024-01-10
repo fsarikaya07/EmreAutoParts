@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import MobileMenu from "./MobileMenu";
 
 import { contact } from "../../data/Data";
-import NiceSelect from "./NiceSelect";
+
 import { useAutoContext } from "../../Context/Context";
 
 const HeaderThree = () => {
