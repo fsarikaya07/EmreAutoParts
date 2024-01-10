@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { carAccDetail } from '../data/AccessoriesData'
 import EComment from '../components/ecommetGalery/EComment'
 import { useAutoContext } from '../Context/Context'
+import { LangWords } from '../data/LangData'
 
 const AccDetail = () => {
     const {slug}=useParams()
@@ -12,6 +13,7 @@ const AccDetail = () => {
     const data= carAccDetail.find(item=> item.lang=== lang).data
     const dataDetail= data.find(item=> item.slug=== slug)
     const imgDetail= dataDetail.image
+    const langData= LangWords.find(item=> item.lang=== lang).data
     console.log("detail", imgDetail);
     
   return (
@@ -42,7 +44,7 @@ const AccDetail = () => {
                   <div className="sec-title__tagline">
                     <h6>{dataDetail?.title}</h6> <span className="right"></span>
                   </div>
-                  <h2 className="sec-title__title">TEKNİK ÖZELLİKLER</h2>
+                  <h2 className="sec-title__title">{langData.attribute}</h2>
                 </div>
                 <div className="ürün-table">
                 

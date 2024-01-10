@@ -62,7 +62,7 @@ const HeroOne = () => {
                         <h3>{item.title}</h3>
                         <h2>{item.title2}</h2>
                         <p>{item.content}</p>
-                        <div className="btn-box">
+                        {/* <div className="btn-box">
                           <Link
                             to={process.env.PUBLIC_URL + `/`}
                             className="thm-btn"
@@ -70,7 +70,7 @@ const HeroOne = () => {
                           >
                             Read More +
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

@@ -4,7 +4,8 @@ import { AiOutlineBars } from 'react-icons/ai';
 import { CgChevronDown, CgChevronLeft } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { LogoImage, contact } from '../../data/Data';
+import { LogoImage, contact, navbar } from '../../data/Data';
+import { useAutoContext } from '../../Context/Context';
 
 const menuData = [
     {
@@ -104,13 +105,13 @@ const SubMenu = ({ item }) => {
 
     return (
         <>
-            <SidebarLink to={process.env.PUBLIC_URL + `${item.path}`} onClick={item.subNav && showSubnav}>
+            <SidebarLink to={`${item.slug}`} onClick={item.subNav && showSubnav}>
                 <div>
-                    {item.icon}
+                    {/* {item.icon} */}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
                 <div>
-                    {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
+                    {/* {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null} */}
                 </div>
             </SidebarLink>
             {subnav &&
@@ -154,14 +155,16 @@ const SidebarWrap = styled.div`
 
 const MobileMenu = () => {
     const [sidebar, setSidebar] = useState(false);
+    const { lang } = useAutoContext();
+    const navData = navbar.find(item=> item.lang=== lang).data
     const logoImage=LogoImage
-    const dataContact= contact
+    const dataContact= contact.find(item=> item.lang=== lang).data
     const showSidebar = () => setSidebar(!sidebar);
     let publicUrl = process.env.PUBLIC_URL+'/'
 
     return (
         <>
-            <>
+            <div className=''>
                 <NavIcon to="#" style={{ justifyContent: 'flex-end' }}>
                     <AiOutlineBars onClick={showSidebar} />
                 </NavIcon>
@@ -182,7 +185,7 @@ const MobileMenu = () => {
                                     onClick={showSidebar}
                                 />
                             </NavIcon>
-                            {menuData.map((item, index) => (
+                            {navData.map((item, index) => (
                                 <SubMenu item={item} key={index} />
                             ))}
                             <ul className="mobile-nav__contact list-unstyled">
@@ -206,7 +209,7 @@ const MobileMenu = () => {
                         </div>
                     </SidebarWrap>
                 </SidebarNav>
-            </>
+            </div>
         </>
     );
 };

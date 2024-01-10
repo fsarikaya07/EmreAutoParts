@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { categorys } from "../../data/Data";
 import { useAutoContext } from "../../Context/Context";
+import { LangWords } from "../../data/LangData";
 
 const ServiceThree = () => {
   const { lang}= useAutoContext()
   const data = categorys.find((item) => item.lang === lang).data;
+  const langData= LangWords.find(item=> item.lang=== lang).data
   
   let publicUrl = process.env.PUBLIC_URL + "/";
 
@@ -30,7 +32,7 @@ const ServiceThree = () => {
               <div className="services-three__top">
                 <div className="sec-title">
                   <div className="sec-title__tagline">
-                    <h6>COMPANY SERVICES </h6> <span className="right"></span>
+                    <h6>{langData.category} </h6> <span className="right"></span>
                   </div>
                   {/* <h2 className="sec-title__title">
                     Our Company Best <br /> Services
@@ -48,7 +50,7 @@ const ServiceThree = () => {
           </div>
 
           <div className="row">
-            {/* Start Services One Single */}
+          
             {data.map((item, index) => {
               return (
                 <div className="col-xl-3 col-lg-6 col-md-6" key={index}>
@@ -60,7 +62,7 @@ const ServiceThree = () => {
                     <h3>
                       <Link to={item.slug}>{item.title}</Link>
                     </h3>
-                    <p className="">{item.content}</p>
+                    {/* <p className="">{item.content}</p> */}
                     <div className="btn-box">
                       <Link to={`/${item.slug}`}>
                         <span className="icon-right-arrow"></span>
@@ -70,8 +72,6 @@ const ServiceThree = () => {
                 </div>
               );
             })}
-
-            {/* End Services One Single */}
           </div>
         </div>
       </section>

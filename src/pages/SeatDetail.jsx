@@ -6,6 +6,7 @@ import FooterOne from "../common/footer/FooterOne";
 import { carSeatDetail } from "../data/SeatData";
 import EComment from "../components/ecommetGalery/EComment";
 import { useAutoContext } from "../Context/Context";
+import { LangWords } from "../data/LangData";
 
 const SeatDetail = () => {
   const {lang }= useAutoContext()
@@ -13,6 +14,8 @@ const SeatDetail = () => {
   const data = carSeatDetail.find((item) => item.lang === lang).data;
   const dataDetail = data.find((item) => item.slug === slug);
   const imgDetail = dataDetail.image;
+  const langData= LangWords.find(item=> item.lang=== lang).data
+
   console.log("detail", dataDetail);
 
   return (
@@ -43,7 +46,7 @@ const SeatDetail = () => {
                       <h6>{dataDetail?.title}</h6>{" "}
                       <span className="right"></span>
                     </div>
-                    <h2 className="sec-title__title">TEKNİK ÖZELLİKLER</h2>
+                    <h2 className="sec-title__title">{langData.attribute}</h2>
                   </div>
                   <div className="ürün-table">
                     <p className="text-[14px] lg:text-[16px] text-center xl:px-4 w-full">

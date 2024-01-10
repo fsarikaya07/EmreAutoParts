@@ -17,7 +17,7 @@ export const navbar = [
 
       {
         title: "Yedek Parca",
-        slug: "/yedekParca",
+        slug: "/yedek-parca",
       },
       {
         title: "Hakkımızda",
@@ -66,17 +66,17 @@ export const slider = [
     lang: "tr",
     data: [
       {
-        title: "AnaSayfa",
-        title2: "SLider Deneme",
+        title: "Ürünler",
+        title2: "Araçlarınız için orjinal koltuklar.",
         content:
-          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+          "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider1.jpg",
       },
       {
-        title: "Slider",
-        title2: "SLider Deneme",
+        title: "Ürünler",
+        title2: "Araçlarınız için orjinal koltuklar.",
         content:
-          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+          "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider2.jpg",
       },
     ],
@@ -85,21 +85,22 @@ export const slider = [
     lang: "de",
     data: [
       {
-        title: "AnaSayfa",
-        title2: "SLider Deneme",
+        title: "Sitzbänke",
+        title2: "Araçlarınız için orjinal koltuklar.",
         content:
-          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+          "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider1.jpg",
       },
       {
-        title: "Slider",
+        title: "Sitzbänke",
         title2: "SLider Deneme",
         content:
-          "Slider Deneme Lorem ipsum is simply free text dolor amett consec adipisc.",
+          "Deri, Kumaş, Suni Deri, V-Sınıfı",
         images: "/assets/images/slider/slider2.jpg",
       },
     ],
   },
+ 
  
 ];
 export const categorys = [

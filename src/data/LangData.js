@@ -3,15 +3,24 @@ export const LangWords = [
     lang: "tr",
     data: {
       category: "Kategory ",
-      location:"Konumumuz",
+      location: "Konumumuz",
+      //navbar
+      email: "Çevrimiçi Destek",
+      contact: "İletişim",
+      product: "Ürünlerimiz",
+      attribute: "TEKNİK ÖZELLİKLER ",
     },
   },
   {
     lang: "de",
     data: {
-        category: "Katolog ",
-        location:"Konumumuz",
+      category: "Kategory ",
+      location: "Konumumuz",
+      //navbar
+      email: "Çevrimiçi Destek",
+      contact: "İletişim",
+      product: "Ürünlerimiz",
+      attribute: "TEKNİK ÖZELLİKLER ",
     },
   },
 ];
-

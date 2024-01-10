@@ -9320,9 +9320,9 @@ a.sc-hLBbgP {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(var(--thm-base-rgb), 0.95);
+  /* background: rgba(var(--thm-base-rgb), 0.95); */
   opacity: 0.8;
-  /* background: var(--thm-base); */
+  background: var(--thm-base);
   border-radius: 10px;
   content: "";
   z-index: -2;

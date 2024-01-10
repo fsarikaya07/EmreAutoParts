@@ -1,128 +1,126 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAutoContext } from "../../Context/Context";
+import { navbar } from "../../data/Data";
+import { LangWords } from "../../data/LangData";
 
-export default class FooterOne extends React.Component {
-  render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
-    return (
-      <>
-        <footer className="footer-one-sec">
+const FooterOne = () => {
+  const { lang } = useAutoContext();
+  const navData = navbar.find(item=> item.lang=== lang).data
+  const langData= LangWords.find(item=> item.lang=== lang).data
+  console.log(lang);
+  let publicUrl = process.env.PUBLIC_URL + "/";
+  return (
+    <>
+      <footer className="footer-one-sec">
+        <div
+          className="footer-one__pattern"
+          style={{
+            backgroundImage:
+              "url(" +
+              publicUrl +
+              "assets/images/pattern/footer-v1-pattern.png)",
+          }}
+        ></div>
+        <div className="footer-one__top">
           <div
-            className="footer-one__pattern"
+            className="footer-one__top-img"
             style={{
               backgroundImage:
                 "url(" +
                 publicUrl +
-                "assets/images/pattern/footer-v1-pattern.png)",
+                "assets/images/resources/footer-v1-img3.png)",
             }}
           ></div>
-          <div className="footer-one__top">
-            <div
-              className="footer-one__top-img"
-              style={{
-                backgroundImage:
-                  "url(" +
-                  publicUrl +
-                  "assets/images/resources/footer-v1-img3.png)",
-              }}
-            ></div>
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="footer-one__top-inner">
-                    <div className="row">
-                      <div
-                        className="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
-                        data-wow-delay="0.1s"
-                      >
-                        <div className="footer-widget__column footer-widget__about">
-                          <div className="footer-widget__about-logo">
-                            <Link to="/">
-                              <img
-                                src={
-                                  publicUrl + "assets/images/logo/190x65.jpg"
-                                }
-                                alt="Logo"
-                              />
-                            </Link>
-                          </div>
-
-                          <p className="footer-widget__about-text">
-                            Duis aute irure dolor in reprehenderit on voluptate
-                            velit esse cillum dolore eu nulla pariatur.
-                            Excepteur sint occaecat
-                          </p>
-
-                          <div className="footer-widget__about-social-link">
-                            <ul>
-                              <li>
-                                <a href="https://facebook.com">
-                                  <span className="first icon-facebook-app-symbol"></span>
-                                  <span className="second icon-facebook-app-symbol"></span>
-                                </a>
-                              </li>
-
-                              <li>
-                                <a href="https://twitter.com">
-                                  <span className="first icon-twitter"></span>
-                                  <span className="second icon-twitter"></span>
-                                </a>
-                              </li>
-
-                              <li>
-                                <a href="https://pinterest.com">
-                                  <span className="first icon-pinterest"></span>
-                                  <span className="second icon-pinterest"></span>
-                                </a>
-                              </li>
-
-                              <li>
-                                <a href="https://linkedin.com">
-                                  <span className="first icon-linkedin"></span>
-                                  <span className="second icon-linkedin"></span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="footer-one__top-inner">
+                  <div className="row">
+                    <div
+                      className="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="footer-widget__column footer-widget__about">
+                        <div className="footer-widget__about-logo">
+                          <Link to="/">
+                            <img
+                              src={publicUrl + "assets/images/logo/190x65.jpg"}
+                              alt="Logo"
+                            />
+                          </Link>
                         </div>
-                      </div>
 
-                      <div
-                        className="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp"
-                        data-wow-delay="0.3s"
-                      >
-                        <div className="footer-widget__column footer-widget__services">
-                          <h2 className="footer-widget__title">Kategory</h2>
-                          <ul className="footer-widget__services-list">
-                            <li className="footer-widget__services-list-item">
-                              <Link to="/about-one">Koltuk</Link>
+                        <p className="footer-widget__about-text">
+                          Duis aute irure dolor in reprehenderit on voluptate
+                          velit esse cillum dolore eu nulla pariatur. Excepteur
+                          sint occaecat
+                        </p>
+
+                        <div className="footer-widget__about-social-link">
+                          <ul>
+                            <li>
+                              <a href="https://facebook.com">
+                                <span className="first icon-facebook-app-symbol"></span>
+                                <span className="second icon-facebook-app-symbol"></span>
+                              </a>
                             </li>
-                            <li className="footer-widget__services-list-item">
-                              <Link to="/services">Aksesuarlar</Link>
+
+                            <li>
+                              <a href="https://twitter.com">
+                                <span className="first icon-twitter"></span>
+                                <span className="second icon-twitter"></span>
+                              </a>
                             </li>
-                            <li className="footer-widget__services-list-item">
-                              <Link to="/blog">Yedek Parca</Link>
+
+                            <li>
+                              <a href="https://pinterest.com">
+                                <span className="first icon-pinterest"></span>
+                                <span className="second icon-pinterest"></span>
+                              </a>
                             </li>
-                            <li className="footer-widget__services-list-item">
-                              <Link to="/portfolio">Hakkımızda</Link>
-                            </li>
-                            <li className="footer-widget__services-list-item">
-                              <Link to="/">İletişim</Link>
+
+                            <li>
+                              <a href="https://linkedin.com">
+                                <span className="first icon-linkedin"></span>
+                                <span className="second icon-linkedin"></span>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </div>
+                    </div>
 
-                      <div
-                        className="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp"
-                        data-wow-delay="0.5s"
-                      >
-                        <div className="footer-widget__column footer-widget__explore">
-                          <h2 className="footer-widget__title"><Link to="/">Impressum</Link></h2>
-                        </div>
+                    <div
+                      className="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <div className="footer-widget__column footer-widget__services">
+                        <h2 className="footer-widget__title">{langData.category}</h2>
+                        <ul className="footer-widget__services-list">
+                          {navData.map((item, index) => {
+                            return (
+                              <li className="footer-widget__services-list-item">
+                                <Link to={item.slug}>{item.title}</Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
                       </div>
+                    </div>
 
-                      {/* <div
+                    <div
+                      className="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp"
+                      data-wow-delay="0.5s"
+                    >
+                      <div className="footer-widget__column footer-widget__explore">
+                        <h2 className="footer-widget__title">
+                          <Link to="/" className="link-info">Impressum</Link>
+                        </h2>
+                      </div>
+                    </div>
+
+                    {/* <div
                         className="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
                         data-wow-delay="0.7s"
                       >
@@ -205,45 +203,45 @@ export default class FooterOne extends React.Component {
                           </div>
                         </div>
                       </div> */}
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="footer-one__bottom clearfix">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="footer-one__bottom-inner">
-                    <div className="footer-one__bottom-text">
-                      <p>
-                        Copyright &copy;2022. All rights reserved to{" "}
-                        <Link to="/">Const</Link>
-                      </p>
-                    </div>
+        <div className="footer-one__bottom clearfix">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="footer-one__bottom-inner">
+                  <div className="footer-one__bottom-text">
+                    <p>
+                      Copyright &copy;2022. All rights reserved to{" "}
+                      <Link to="/">Const</Link>
+                    </p>
+                  </div>
 
-                    <div className="footer-one__bottom-list">
-                      <ul>
-                        <li>
-                          <Link to="/about-one">Terms & Condition </Link>
-                        </li>
-                        <li>
-                          <Link to="/about-one"> Services</Link>
-                        </li>
-                        <li>
-                          <Link to="/about-one">Careers</Link>
-                        </li>
-                      </ul>
-                    </div>
+                  <div className="footer-one__bottom-list">
+                    <ul>
+                      <li>
+                        <Link to="/about-one">Terms & Condition </Link>
+                      </li>
+                      <li>
+                        <Link to="/about-one"> Services</Link>
+                      </li>
+                      <li>
+                        <Link to="/about-one">Careers</Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </footer>
-      </>
-    );
-  }
-}
+        </div>
+      </footer>
+    </>
+  );
+};
+export default FooterOne;

@@ -8,10 +8,13 @@ import LogoBox from "./LogoBox";
 import NiceSelect from "./NiceSelect";
 import { contact } from "../../data/Data";
 import { useAutoContext } from "../../Context/Context";
+import { LangWords } from "../../data/LangData";
 
 const HeaderOne = () => {
   const { lang } = useAutoContext();
+
   const data = contact.find((item) => item.lang === lang).data;
+  const langData = LangWords.find((item) => item.lang === lang).data;
   
   return (
     <>
@@ -75,7 +78,7 @@ const HeaderOne = () => {
                         <span className="icon-email"></span>
                       </div>
                       <div className="text-box">
-                        <h3>Online Support</h3>
+                        <h3>{langData.email}</h3>
                         <p className="email">
                           <a href={data.email}>{data.email}</a>
                         </p>
@@ -87,7 +90,7 @@ const HeaderOne = () => {
                         <span className="icon-phone-call"></span>
                       </div>
                       <div className="text-box">
-                        <h3>Free Contact</h3>
+                        <h3>{langData.contact}</h3>
                         <p className="number">
                           <a href={`tel:${data.iletişim}`}>{data.iletişim}</a>
                         </p>
